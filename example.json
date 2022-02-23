@@ -1,0 +1,58 @@
+{
+    "component": "Member",
+    "item": [
+        {
+            "name": "Login",
+            "method": "POST",
+            "url": "https://api.tests.domain/Member/Login",
+            "body": [
+                {
+                    "key": "PhoneNumber",
+                    "type": "str"
+                },
+                {
+                    "key": "Platform",
+                    "type": "int"
+                }
+            ],
+            "headers": [],
+            "params": []
+        },
+        {
+            "name": "Auth",
+            "method": "POST",
+            "url": "https://api.tests.domain/Member/Auth",
+            "body": [
+                {
+                    "key": "AuthCode",
+                    "type": "str"
+                }
+            ],
+            "headers": [
+                {
+                    "key": "Token",
+                    "type": "str"
+                }
+            ],
+            "params": []
+        },
+        {
+            "name": "Info",
+            "method": "GET",
+            "url": "https://api.tests.domain/Member/Info",
+            "body": [],
+            "headers": [
+                {
+                    "key": "Token",
+                    "type": "str"
+                }
+            ],
+            "params": [
+                {
+                    "key": "Scope",
+                    "type": "list"
+                }
+            ]
+        }
+    ]
+}

@@ -1,2 +1,6 @@
 # code-generator
-Automatically generate python code for my automation api testing architecture.
+
+- usage
+  ```shell
+  python command.py --doc-file example.json --templates api --service-name UserModule
+  ```
